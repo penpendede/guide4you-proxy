@@ -4,7 +4,7 @@
  * Guide4You AJAX proxy 1.0.0
  * Copyright (C) 2016 Klaus Benndorf, Bonn
  * based on AJAX Cross Domain (PHP) Proxy 0.8
- * Coypright (C) 2016 Iacovos Constantinou (https://github.com/softius)
+ * Copyright (C) 2016 Iacovos Constantinou (https://github.com/softius)
  * modified for use with Guide4You.
  *
  * This program is free software: you can redistribute it and/or modify

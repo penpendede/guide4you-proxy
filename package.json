@@ -1,10 +1,10 @@
 {
-  "name": "guide4you-proxy",
+  "name": "stolperstein-bonn-proxy",
   "version": "1.0.0",
-  "description": "An AJAX proxy for Guide4You.",
-  "keywords": [ "proxy", "AJAX", "CORS", "map", "map client", "openlayers" ],
-  "author": "Klaus Benndorf",
-  "homepage": "http://www.benndorf.de",
+  "description": "An AJAX proxy for the stolperstein-bonn project.",
+  "keywords": [ "proxy", "AJAX", "CORS", "map", "map client", "leaflet", "stolperstein" ],
+  "author": "Josef Schugt",
+  "homepage": "https://github.com/penpendede/stolperstein-bonn-proxy",
   "license": "GPL-3.0+",
   "contributors": [
     "Sascha Klemenjak <sascha.klemenjak@benndorf.de>",
@@ -20,7 +20,7 @@
   "repository" :
   {
     "type" : "git",
-    "url" : "https://github.com/KlausBenndorf/guide4you-proxy.git"
+    "url" : "https://github.com/penpendede/stolperstein-bonn-proxy.git"
   }
 }
 

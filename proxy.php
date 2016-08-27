@@ -23,7 +23,7 @@
  * Enables or disables filtering for cross domain requests.
  * Recommended value: true
  */
-define('CSAJAX_FILTERS', {{{proxyAjaxFilters}}});
+define('CSAJAX_FILTERS', true);
 
 /**
  * If set to true, $valid_requests should hold only domains i.e. a.example.com, b.example.com, usethisdomain.com
@@ -31,17 +31,17 @@ define('CSAJAX_FILTERS', {{{proxyAjaxFilters}}});
  * http://example.com/this/is/a/long/url/
  * Recommended value: false (for security reasons - do not forget that anyone can access your proxy)
  */
-define('CSAJAX_FILTER_DOMAIN', {{{proxyFilterDomain}}});
+define('CSAJAX_FILTER_DOMAIN', false);
 
 /**
  * Set debugging to true to receive additional messages - really helpful on development
  */
-define('CSAJAX_DEBUG', {{{proxyAjaxDebug}}});
+define('CSAJAX_DEBUG', false);
 
 /**
  * A set of valid cross domain requests - for convenience localhost is always allowed.
  */
-$valid_requests = array("localhost"{{#proxyValidRequests}}, "{{{.}}}"{{/proxyValidRequests}});
+$valid_requests = array("https://www.mediawiki.org/w/api.php");
 
 /**
  * Set extra multiple options for cURL

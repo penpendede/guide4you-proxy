@@ -1,11 +1,10 @@
 <?php
 
 /**
- * Guide4You AJAX proxy 1.0.0
- * Copyright (C) 2016 Klaus Benndorf, Bonn
+ * stolperstein-bonn AJAX proxy 1.0.0
+ * Copyright (C) 2016 Josef Schugt, Bonn
  * based on AJAX Cross Domain (PHP) Proxy 0.8
  * Copyright (C) 2016 Iacovos Constantinou (https://github.com/softius)
- * modified for use with Guide4You.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -48,12 +47,10 @@ $valid_requests = array("https://www.mediawiki.org/w/api.php");
  * Could be used to define CURLOPT_SSL_VERIFYPEER & CURLOPT_SSL_VERIFYHOST for HTTPS
  * Also to overwrite any other options without changing the code
  * See http://php.net/manual/en/function.curl-setopt-array.php
- *
- * This currently cannot be configured by means of the Guide4You Configuration file
  */
 $curl_options = array(
-    // CURLOPT_SSL_VERIFYPEER => false,
-    // CURLOPT_SSL_VERIFYHOST => 2,
+    CURLOPT_SSL_VERIFYPEER => false,
+    CURLOPT_SSL_VERIFYHOST => 2
 );
 
 /* * * STOP EDITING HERE UNLESS YOU KNOW WHAT YOU ARE DOING * * */

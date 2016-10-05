@@ -4,7 +4,7 @@
   "description": "An AJAX proxy for Guide4You.",
   "keywords": [ "proxy", "AJAX", "CORS", "map", "map client", "openlayers" ],
   "author": "Klaus Benndorf",
-  "homepage": "http://www.benndorf.de",
+  "homepage": "https://github.com/KlausBenndorf/guide4you-proxy",
   "license": "GPL-3.0+",
   "contributors": [
     "Sascha Klemenjak <sascha.klemenjak@benndorf.de>",

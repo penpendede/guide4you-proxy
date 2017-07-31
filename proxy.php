@@ -1,11 +1,10 @@
 <?php
 
 /**
- * Guide4You AJAX proxy 1.0.0
- * Copyright (C) 2016 Klaus Benndorf, Bonn
+ * stolperstein-bonn AJAX proxy 1.0.0
+ * Copyright (C) 2016 Josef Schugt, Bonn
  * based on AJAX Cross Domain (PHP) Proxy 0.8
  * Copyright (C) 2016 Iacovos Constantinou (https://github.com/softius)
- * modified for use with Guide4You.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +22,7 @@
  * Enables or disables filtering for cross domain requests.
  * Recommended value: true
  */
-define('CSAJAX_FILTERS', {{{proxyAjaxFilters}}});
+define('CSAJAX_FILTERS', true);
 
 /**
  * If set to true, $valid_requests should hold only domains i.e. a.example.com, b.example.com, usethisdomain.com
@@ -31,29 +30,27 @@ define('CSAJAX_FILTERS', {{{proxyAjaxFilters}}});
  * http://example.com/this/is/a/long/url/
  * Recommended value: false (for security reasons - do not forget that anyone can access your proxy)
  */
-define('CSAJAX_FILTER_DOMAIN', {{{proxyFilterDomain}}});
+define('CSAJAX_FILTER_DOMAIN', false);
 
 /**
  * Set debugging to true to receive additional messages - really helpful on development
  */
-define('CSAJAX_DEBUG', {{{proxyAjaxDebug}}});
+define('CSAJAX_DEBUG', false);
 
 /**
  * A set of valid cross domain requests - for convenience localhost is always allowed.
  */
-$valid_requests = array("localhost"{{#proxyValidRequests}}, "{{{.}}}"{{/proxyValidRequests}});
+$valid_requests = array("https://www.mediawiki.org/w/api.php", "https://stadtplan.bonn.de/geojson");
 
 /**
  * Set extra multiple options for cURL
  * Could be used to define CURLOPT_SSL_VERIFYPEER & CURLOPT_SSL_VERIFYHOST for HTTPS
  * Also to overwrite any other options without changing the code
  * See http://php.net/manual/en/function.curl-setopt-array.php
- *
- * This currently cannot be configured by means of the Guide4You Configuration file
  */
 $curl_options = array(
-    // CURLOPT_SSL_VERIFYPEER => false,
-    // CURLOPT_SSL_VERIFYHOST => 2,
+    CURLOPT_SSL_VERIFYPEER => false,
+    CURLOPT_SSL_VERIFYHOST => 2
 );
 
 /* * * STOP EDITING HERE UNLESS YOU KNOW WHAT YOU ARE DOING * * */

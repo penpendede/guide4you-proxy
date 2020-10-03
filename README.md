@@ -1,5 +1,7 @@
 # AJAX proxy for stolperstein-bonn
 
+**Obsolete now**
+
 OpenStreetMap supports different kinds of specification for the **image**
 attribute. It can be the URL of an image, the URL of a page of an image or
 **File:**, the latter referring to an image on WikiMedia Commons.
